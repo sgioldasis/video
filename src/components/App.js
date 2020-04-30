@@ -10,7 +10,9 @@ class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.onTermSubmit('roblox');
+    this.onTermSubmit(
+      'Roblox Parkour για καλωσόρισμα στο κανάλι. Παίζουμε Roblox!'
+    );
   }
 
   onTermSubmit = async (term) => {
