@@ -1,4 +1,5 @@
 import React from 'react';
+import Savas from '../images/Savas.jpg';
 
 class SearchBar extends React.Component {
   state = { term: '' };
@@ -18,12 +19,18 @@ class SearchBar extends React.Component {
       <div className="search-bar ui segment">
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
-            <label>Video Search</label>
-            <input
-              type="text"
-              value={this.state.term}
-              onChange={this.onInputChange}
-            />
+            <div class="ui labeled icon input">
+              <div class="ui label">
+                <img src={Savas} />
+              </div>
+              <input
+                type="text"
+                placeholder="Search..."
+                value={this.state.term}
+                onChange={this.onInputChange}
+              />
+              <i class="search icon"></i>
+            </div>
           </div>
         </form>
       </div>
